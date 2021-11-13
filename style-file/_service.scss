@@ -1,0 +1,79 @@
+#service-section {
+    min-height: 47rem;
+    background: #17c2a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .service-header {
+        text-align: center;
+        h2 {
+            text-transform: capitalize;
+            color: $color-white;
+            margin: 0 0 30px;
+        }
+        h2::before{
+            content: '';
+            width: 5.938rem;
+            height: 5px;
+            background: #14a58c;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            margin: 60px 0 0 140px;
+        }
+        p {
+            color: $color-white;
+            font-size: clamp(1rem, 5rem, 1.2rem);
+            margin: 0 0 50px;
+        }
+    }
+    .card {
+        background: transparent;
+        text-align: center;
+        border: none;
+        padding: 20px;
+        height: 348px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        img {
+            width: 124px;
+            height: 126px;
+            margin: auto;
+        }
+        span {
+            color: $color-white;
+            font-size: clamp(1.3rem, 5vw, 1.5rem);
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        p {
+            color: $color-white;
+        }
+    }
+    .card:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        background: $color-white;
+        span, p{
+            color: #495057;
+        }
+    }
+}
+
+// responsive
+@media screen and(max-width: 991px){
+    #service-section{
+        .service-header{
+            h2::before{
+                display: none;
+            }
+        }
+        padding: 100px 0;
+        .card{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin: 15px 0;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+#form-section {
+    padding: 100px 0;
+    background: #3c5499;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-header {
+        text-align: center;
+        h2 {
+            text-transform: capitalize;
+            color: #fff;
+            margin: 0 0 30px;
+            letter-spacing: 3px;
+        }
+        h2::before {
+            content: "";
+            width: 5.938rem;
+            height: 5px;
+            background: #273a71;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            margin: 60px 0 0 110px;
+        }
+        p {
+            color: #fff;
+            font-size: clamp(1rem, 5rem, 1.2rem);
+            margin: 0 0 50px;
+        }
+    }
+    .form-control{
+        background: #273a71;
+        border: none;
+        padding: 20px;
+    }
+    .form-btn{
+        margin-top: 50px;
+        background: #30bae7;
+    }
+}
+
+// responsive
+@media screen and(max-width: 991px) {
+    #form-section {
+        padding: 100px 0;
+        .team-header {
+            h2::before {
+                display: none;
+            }
+        }
+        .form-control{
+            margin: 10px 0;
+        }
+    }
+}
+

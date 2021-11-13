@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuda</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Aos animation scroll behaviors -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- slick slider.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider.theme.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- uikit css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/css/uikit.min.css"
+        integrity="sha512-IVjm0u01kGxBO/pahfFz/1T/9il1T2wjSUT0tP8e8tFzc2/pC86OWxf6uhyJGOXT3rGyVHHpfcs10oYyibZd7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel="stylesheet" href="style-file/style.css">
+</head>
+
+<body>
+
+
+    <!-- start header section -->
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top scroll-bg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Cuda Single Page Portfolio.png" class="img-fluid logo" alt="cuda">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars humburger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Hi there! We are the new kids on the block
+                and we build awesome websites and mobile apps.</h1>
+            <button class="general-btn header-btn">work with us!</button>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- start service section -->
+    <div id="service-section">
+        <div class="container">
+            <div class="service-header">
+                <h2>SERVICES WE PROVIDE</h2>
+                <p>We are working with both individuals and businesses from all over the globe <br> to create awesome
+                    websites and applications.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/flag.png" class="img-fluid" alt="flag">
+                        <div class="card-body">
+                            <span>Branding</span>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/pencile.png" class="img-fluid" alt="pencil">
+                        <div class="card-body">
+                            <span>Design</span>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/gears.png" class="img-fluid" alt="geares">
+                        <div class="card-body">
+                            <span>Development</span>
+                            <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/rocket.png" class="img-fluid" alt="rocket">
+                        <div class="card-body">
+                            <span>Rocket Science</span>
+                            <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end service section -->
+
+    <!-- start team section -->
+    <div id="team-section">
+        <div class="container">
+            <div class="team-header">
+                <h2>SERVICES WE PROVIDE</h2>
+                <p>We are working with both individuals and businesses from all over the globe <br> to create awesome
+                    websites and applications.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/face1.jpg" class="img-fluid" alt="flag">
+                        <div class="card-body">
+                            <span>ANNE HATHAWAY</span>
+                            <span class="designation">CEO / Marketing Guru</span>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <ul class="list-unstyled icon-list">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/face2.jpg" class="img-fluid" alt="flag">
+                        <div class="card-body">
+                            <span>Kate Upton</span>
+                            <span class="designation">Creative Director</span>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <ul class="list-unstyled icon-list">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/face3.jpg" class="img-fluid" alt="flag">
+                        <div class="card-body">
+                            <span>Olivia Wilde</span>
+                            <span class="designation">Lead Designer</span>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <ul class="list-unstyled icon-list">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="images/face4.jpg" class="img-fluid" alt="flag">
+                        <div class="card-body">
+                            <span>ANNE HATHAWAY</span>
+                            <span class="designation">CEO / Marketing Guru</span>
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+                        <ul class="list-unstyled icon-list">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end team section -->
+
+    <!-- start skill section -->
+    <div id="skill-section">
+        <div class="container">
+            <div class="skill-header">
+                <h2>WE GOT SKILLS!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <svg class="radial-progress web-design" data-percentage="92" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">92%</text>
+                    </svg>
+                    <h3 class="skill-title">web design</h3>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <svg class="radial-progress html" data-percentage="75" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                    </svg>
+                    <h3 class="skill-title">html/css</h3>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <svg class="radial-progress graphic" data-percentage="70" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                    </svg>
+                    <h3 class="skill-title">graphic design</h3>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <svg class="radial-progress ui" data-percentage="85" viewBox="0 0 80 80">
+                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                        <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
+                        </circle>
+                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                    </svg>
+                    <h3 class="skill-title">ui/ux</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end skill section -->
+
+    <!-- start portfolio section -->
+    <div id="portfolio-section">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2>OUR PORTFOLIO</h2>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet <br>
+                    consectetur, adipisci velit, sed quia non numquam
+                </p>
+            </div>
+            <!-- ########## tap navigation ########## -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link actives" id="pills-all-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-all">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-web-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-web">Webs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-app-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-app">App</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-icon-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-icon">App</button>
+                </li>
+            </ul>
+
+            <!-- ############# tab content ############# -->
+            <div class="tab-content" id="pills-tabContent">
+                <!-- all tab content -->
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+                    <!-- 1st row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/laptop.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Isometric Perspective Mock-Up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/mack.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Time Zone App UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/mackbook.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Viro Media Players UI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Blog / Magazine Flat UI Kit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- web tab content -->
+                <div class="tab-pane fade" id="pills-web" role="tabpanel">
+                    <!-- 1st row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/mack.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Isometric Perspective Mock-Up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Time Zone App UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/laptop.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Viro Media Players UI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Blog / Magazine Flat UI Kit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- apps tab content -->
+                <div class="tab-pane fade" id="pills-app" role="tabpanel">
+                    <!-- 1st row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/mack.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Isometric Perspective Mock-Up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Time Zone App UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/laptop.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Viro Media Players UI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Blog / Magazine Flat UI Kit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- icon tab content -->
+                <div class="tab-pane fade" id="pills-icon" role="tabpanel">
+                    <!-- 1st row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/mack.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Isometric Perspective Mock-Up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Time Zone App UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/laptop.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Viro Media Players UI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="images/pc.png" class="img-fluid" alt="img">
+                                <div class="card-body">
+                                    <p>Blog / Magazine Flat UI Kit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ########################## -->
+            <div class="text-center">
+                <button class="general-btn portfolio-btn">load more projects</button>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio section -->
+
+    <!-- start form section -->
+    <div id="form-section">
+        <div class="container">
+            <div class="form-header">
+                <h2>GET IN TOUCH</h2>
+                <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form action="">
+                        <div class="row my-4">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="general-btn form-btn">send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start form section -->
+
+    <!-- start footer section -->
+    <footer id="footer">
+        <div class="container">
+            <span>facebook</span>
+            <span>twitter</span>
+            <span>google+</span>
+            <span>linkedIn</span>
+            <span>behance</span>
+            <span>dribble</span>
+            <span>Github</span>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- slick.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Aos animation behaviors -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- uikit js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.6/js/uikit.min.js"
+        integrity="sha512-hHDFFf51AgX3Y92RqXxmnmCqiOhMRqgUHx4c5ZVISX/ExcpOZqB05/12eFyOI0XmVFHa0LmVDmVkh4ONOS41BA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="js-file/prograssbar.js"></script>
+    <script src="js-file/app.js"></script>
+
+    <!-- nav scroll to color change -->
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+    </script>
+</body>
+
+</html>
